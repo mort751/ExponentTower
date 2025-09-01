@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The ??? Table",
+	name: "Exponent Tower",
 	nameI18N: "The ??? Table",// When you enabled the internationalizationMod, this is the name in the second language
-	id: "mymod2",
-	author: "nobody",
+	id: "exponent_exponent...expoent",
+	author: "mew",
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
 
@@ -12,7 +12,7 @@ let modInfo = {
 	// Changes the mod default language. false -> English, true -> Chinese
 
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	offlineLimit: 64764764746,  // In hours
 }
 
 var colors = {
@@ -85,7 +85,8 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(1)
+	let gain = new Decimal(0)
+	gain = tmp.ex.formula
 	return gain
 }
 
@@ -103,7 +104,7 @@ var displayThings = [
 
 // You can write code here to easily display information in the top-left corner
 function displayThingsRes(){
-	return 'Points: '+format(player.points)+' | '
+	return 'Points: ' + format(player.points) + ' | '
 }
 
 // Determines when the game "ends"
