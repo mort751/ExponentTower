@@ -121,7 +121,7 @@ addLayer("ex", {
             let expo = baseExpo.mul(Decimal.pow(scaling, x))
             return new Decimal.pow(10, expo)
         },
-        display() { return "Cost: " + format(this.cost()) + " Points<br> + " + format(this.effect()) + ' base/sec<br>Bought: ' + getBuyableAmount(this.layer, this.id) },
+        display() { return "Cost: " + format(this.cost()) + " Points<br> + " + format(this.effect()) + ' expo/sec<br>Bought: ' + getBuyableAmount(this.layer, this.id) },
         canAfford() { return player.points.gte(this.cost()) },
         buy() {
             player.points = player.points.sub(this.cost())
@@ -145,7 +145,7 @@ addLayer("ex", {
             let expo = baseExpo.mul(Decimal.pow(scaling, x))
             return new Decimal.pow(10, expo)
         },
-        display() { return "Cost: " + format(this.cost()) + " Points<br> + " + format(this.effect()) + ' base/sec<br>Bought: ' + getBuyableAmount(this.layer, this.id) },
+        display() { return "Cost: " + format(this.cost()) + " Points<br> + " + format(this.effect()) + ' expo/sec<br>Bought: ' + getBuyableAmount(this.layer, this.id) },
         canAfford() { return player.points.gte(this.cost()) },
         buy() {
             player.points = player.points.sub(this.cost())
@@ -169,7 +169,7 @@ addLayer("ex", {
             let expo = baseExpo.mul(Decimal.pow(scaling, x))
             return new Decimal.pow(10, expo)
         },
-        display() { return "Cost: " + format(this.cost()) + " Points<br> + " + format(this.effect()) + ' base/sec<br>Bought: ' + getBuyableAmount(this.layer, this.id) },
+        display() { return "Cost: " + format(this.cost()) + " Points<br> + " + format(this.effect()) + ' expo/sec<br>Bought: ' + getBuyableAmount(this.layer, this.id) },
         canAfford() { return player.points.gte(this.cost()) },
         buy() {
             player.points = player.points.sub(this.cost())
